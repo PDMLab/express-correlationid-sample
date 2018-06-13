@@ -10,7 +10,7 @@ This sample shows the usage of `express-correlation-id` package with `express` c
 server listening on port 3000
 ```
 
-`http get localhost:3000/api/hello`:
+`http get localhost:3000/api1/hello`:
 
 ```
 API 1 controller correlation id: 03b37b23-6451-4c57-8722-cef475d0c914
@@ -19,7 +19,7 @@ API 1 sync dependency correlation id: 03b37b23-6451-4c57-8722-cef475d0c914
 API 1 async dependency correlation id: 03b37b23-6451-4c57-8722-cef475d0c914
 ```
 
-`http get localhost:3000/api/hellofail`:
+`http get localhost:3000/api1/hellofail`:
 
 ```
 API 1 controller fail correlation id: a13b0f70-5bdb-4ede-90b3-cc1de33efdd9
