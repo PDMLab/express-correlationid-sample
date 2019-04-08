@@ -4,7 +4,10 @@ const controllers = require('./controllers');
 const correlator = require('express-correlation-id');
 const express = require('express');
 const app = express();
+const Logger = require('./logger');
+const logger = new Logger('test');
 app.use(correlator());
+app.set('logger', logger);
 controllers.init(app);
 
 
